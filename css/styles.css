@@ -92,6 +92,7 @@ button {
 }
 
 
+
 /* new css */
 
 .show-cart li {
@@ -104,4 +105,10 @@ button {
     font-size: 12px;
 }
 
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
