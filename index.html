@@ -138,7 +138,7 @@
 <body>
 
     <div id="header">
-        <h1>Shop</h1>
+        <h1>Sqaudshop</h1>
     </div>
 
     <!-- new -->
@@ -151,21 +151,38 @@
 
             <div class="col">
 
-                <div class="card" style="width: 20rem;">
+                <div class="card" style="width: 20rem; margin-left: -100px;">
 
                     <img class="card-img-top" src="img/images (1).jpg" alt="Card image cap">
 
                     <div class="card-block">
 
-                        <h4 class="card-title">Desktop</h4>
+                        <h4 class="card-title">Hoodie</h4>
 
-                        <p class="card-text">Price: $250</p>
+                        <p class="card-text">Price: $350</p>
 
-                        <a href="#" data-name="Desktop" data-price="250" class="add-to-cart btn btn-primary"
+                        <a href="#" data-name="Hoodie" data-price="350" class="add-to-cart btn btn-primary"
                             onclick="getprice1();" id="item1">Add to cart</a>
 
                     </div>
+                    <div class="col">
 
+                        <div class="card" style="width: 15rem; margin-top: -318px; margin-left: 410px;">
+        
+                            <img class="card-img-top" src="img/images (1).jpg" alt="Card image cap">
+        
+                            <div class="card-block">
+        
+                                <h4 class="card-title">Baseball Cap</h4>
+        
+                                <p class="card-text">Price: $75</p>
+        
+                                <a href="#" data-name="Desktop" data-price="250" class="add-to-cart btn btn-primary"
+                                    onclick="getprice2();" id="item2">Add to cart</a>
+        
+                            </div>
+                 
+        
                 </div>
 
             </div>
@@ -178,14 +195,32 @@
 
                     <div class="card-block">
 
-                        <h4 class="card-title">Watch</h4>
+                        <h4 class="card-title">Bottle </h4>
 
-                        <p class="card-text">Price: $300</p>
+                        <p class="card-text">Price: $50</p>
 
-                        <a href="#" data-name="Banana" data-price="300" class="add-to-cart btn btn-primary"
-                            onclick="getprice2();" id="item2">Add to cart</a>
+                        <a href="#" data-name="Bottle" data-price="50" class="add-to-cart btn btn-primary"
+                            onclick="getprice3();" id="item3">Add to cart</a>
 
                     </div>
+                    <div class="col">
+
+                        <div class="card" style="width: 15rem; margin-top: -660px; margin-left: 800px; ">
+        
+                            <img class="card-img-top" src="img/images (1).jpg" alt="Card image cap">
+        
+                            <div class="card-block">
+        
+                                <h4 class="card-title">T-shirt</h4>
+        
+                                <p class="card-text">Price: $15</p>
+        
+                                <a href="#" data-name="T-shirt" data-price="15" class="add-to-cart btn btn-primary"
+                                    onclick="getprice4();" id="item4">Add to cart</a>
+        
+                            </div>
+                 
+        
 
                 </div>
 
@@ -193,20 +228,37 @@
 
             <div class="col">
 
-                <div class="card" style="width: 20rem;">
+                <div class="card" style="width: 20rem; margin-top: -328px; margin-left: 368px;">
 
                     <img class="card-img-top" src="img/images.jpg" alt="Card image cap">
 
                     <div class="card-block">
 
-                        <h4 class="card-title">Laptop</h4>
+                        <h4 class="card-title">Laptop Sleeve</h4>
 
-                        <p class="card-text">Price: $1000</p>
+                        <p class="card-text">Price: $1,000,000</p>
 
-                        <a href="#" data-name="Laptop" data-price="1000" class="add-to-cart btn btn-primary"
-                            onclick="getprice3();" id="item3">Add to cart</a>
+                        <a href="#" data-name="Laptop Sleeve" data-price="1000000" class="add-to-cart btn btn-primary"
+                            onclick="getprice5();" id="item5">Add to cart</a>
 
                     </div>
+                    <div class="card" style="width: 20rem; margin-top: -312px; margin-left: 393px;">
+
+                        <img class="card-img-top" src="img/images.jpg" alt="Card image cap">
+    
+                        <div class="card-block">
+    
+                            <h4 class="card-title"> Set of 3 Stickers</h4>
+    
+                            <p class="card-text">Price: $30</p>
+    
+                            <a href="#" data-name="Stickers" data-price="30" class="add-to-cart btn btn-primary"
+                                onclick="getprice6();" id="item6">Add to cart</a>
+    
+                        </div>
+                   
+                 
+        
 
                 </div>
 
@@ -218,8 +270,6 @@
 
         <!-- new end -->
     </div>
-
-    <br>
 
     <div id="stuff">
 
@@ -237,7 +287,25 @@
     </div> <!-- stuff -->
 
     <div id="footer">
-        <p>Footer Here</p>
+        <div class="copyright mt-5">
+
+            <div class="row mx-auto container">
+
+                <div class="col-lg-3 col-md-6 col-12 mb-4">
+                    <img src="payment.png">
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+                    <p>SquadShop  © 2022. All Rights Reserved</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                    <div class="elfsight-app-afde4e0a-ada6-444d-9d63-f6ec689d6879"></div>
+                </div>
+            </div>
+
+        </div>
     </div>
 
     <script>
@@ -282,6 +350,30 @@
         }
         function getprice3() {
             var item = document.getElementById('item3');
+            price = price + parseFloat(item.getAttribute('data-price'));
+            total = total + price;
+            document.getElementById('subtotal').innerHTML = total.toFixed(2);;
+            remain_fund = remain_fund - price;
+            document.getElementById('funds').innerHTML = remain_fund;
+        }
+        function getprice4() {
+            var item = document.getElementById('item4');
+            price = price + parseFloat(item.getAttribute('data-price'));
+            total = total + price;
+            document.getElementById('subtotal').innerHTML = total.toFixed(2);;
+            remain_fund = remain_fund - price;
+            document.getElementById('funds').innerHTML = remain_fund;
+        }
+        function getprice5() {
+            var item = document.getElementById('item5');
+            price = price + parseFloat(item.getAttribute('data-price'));
+            total = total + price;
+            document.getElementById('subtotal').innerHTML = total.toFixed(2);;
+            remain_fund = remain_fund - price;
+            document.getElementById('funds').innerHTML = remain_fund;
+        }
+        function getprice6() {
+            var item = document.getElementById('item6');
             price = price + parseFloat(item.getAttribute('data-price'));
             total = total + price;
             document.getElementById('subtotal').innerHTML = total.toFixed(2);;
