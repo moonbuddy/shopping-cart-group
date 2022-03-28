@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Staatliches&display=swap');
+
 body {
     background-color: ivory;
 }
@@ -14,11 +16,28 @@ body {
 }
 
 h1 {
+    padding-top: 3%;
     text-align: center;
     font-weight: normal;
     letter-spacing: 3px;
+    font-family: staatliches;
 }
 
+h4 {
+    padding-top: 2%; 
+    font-family: poppins;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+p {
+    font-family: poppins;
+}
+
+h3 {
+    font-family: poppins;
+    font-weight: bold;
+}
 
 #footer {
     width: 100%;
@@ -73,12 +92,14 @@ button {
 
 /* new css */
 
-
-
 .show-cart li {
 
     display: flex;
 
+}
+
+.copyright {
+    font-size: 12px;
 }
 
 
