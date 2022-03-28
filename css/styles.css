@@ -21,6 +21,7 @@ h1 {
     font-weight: normal;
     letter-spacing: 3px;
     font-family: staatliches;
+    font-size: 3.5rem;
 }
 
 h4 {
@@ -35,6 +36,7 @@ p {
 }
 
 h3 {
+    padding-bottom: 2%;
     font-family: poppins;
     font-weight: bold;
 }
